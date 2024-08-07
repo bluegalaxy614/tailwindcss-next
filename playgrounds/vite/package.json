@@ -1,0 +1,25 @@
+{
+  "name": "vite-playground",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "tsc --noEmit",
+    "dev": "bun --bun vite ./src --config ./vite.config.ts",
+    "build": "bun --bun vite build ./src --outDir ../dist --config ./vite.config.ts --emptyOutDir",
+    "preview": "bun --bun vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "workspace:^",
+    "@vitejs/plugin-react": "^4.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "workspace:^"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "bun": "^1.1.10",
+    "vite": "catalog:",
+    "vite-plugin-handlebars": "^2.0.0"
+  }
+}
